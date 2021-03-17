@@ -1,2 +1,2 @@
-# goit-project-1
+# goit-project
 learn-1
