@@ -8,6 +8,7 @@
 body {
     background-color: #ffffff;
     color: var(--accent-text-color);
+    font-family: roboto;
 }
 
 /*Хедер*/
@@ -30,7 +31,7 @@ body {
         color: var(--accent-color);
     }
 
-    /*Контакты*/
+/*Контакты*/
 
     .contacts .e-mail {
         color: var(--primary-text-color);
@@ -54,8 +55,33 @@ body {
         color: var(--accent-color);
     }
 
+/*Герой*/
 
-    
+    .hero .hero-title {
+        color: var(--primari-white-color);
+        background-color: var(--primary-text-color);
+    }
 
+    .button {
+        background-color: var(--titel-text-color);
+        color: var(--primari-white-color);
 
-        
+        font-size: 16px;
+        padding: 32px;
+        display: inline-block;
+        border: 1px; 
+        solid: black;
+
+    }
+
+    .button.primary {
+        background-color: var(--accent-color);
+        color: var(--primari-white-color);
+        border-color: transparent;
+    }
+
+    .button.secondary {
+        background-color: var(--primari-white-color);
+        color: var(--titel-text-color);
+        border-color: var(--accent-color);
+    }
