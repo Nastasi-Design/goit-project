@@ -1,0 +1,61 @@
+:root {
+    --primary-text-color: #757575;
+    --titel-text-color: #212121;
+    --accent-color: #2196F3;
+    --primari-white-color: #ffffff;
+}
+
+body {
+    background-color: #ffffff;
+    color: var(--accent-text-color);
+}
+
+/*Хедер*/
+
+/*Навигация*/
+
+    .logo {
+        color: var(--titel-text-color);
+    }
+
+    .site-nav .link {
+        color: var(--titel-text-color);
+    }
+
+    .site-nav .link:hover {
+        color: var(--accent-color);
+    }
+
+    .site-nav .link:focus {
+        color: var(--accent-color);
+    }
+
+    /*Контакты*/
+
+    .contacts .e-mail {
+        color: var(--primary-text-color);
+    }
+    .contacts .e-mail:hover {
+        color: var(--accent-color);    
+    }
+
+    .contacts .e-mail:focus {
+        color: var(--accent-color);
+    }
+
+    .contacts .phone {
+        color: var(--primary-text-color);
+    }
+    .contacts .phone:hover {
+        color: var(--accent-color);
+    }
+
+    .contacts .phone:focus {
+        color: var(--accent-color);
+    }
+
+
+    
+
+
+        
