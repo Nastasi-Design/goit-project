@@ -9,22 +9,27 @@
 body {
     background-color: #ffffff;
     color: var(--accent-text-color);
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
     letter-spacing: 0.03em;
 }
 
 .list {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 /*Общие стили*/
 
     .link {
         color: var(--titel-text-color);
         text-decoration: none;
+        font-weight: 500;
+        line-height: 0.03;
+        letter-spacing: 0.02em;
     }
 
     .link:hover, .link:focus {
@@ -35,7 +40,7 @@ body {
         color: var(--titel-text-color);
         font-weight: 700;
         font-size: 36px;
-        line-height: 42px;
+        line-height: 1.16;
         text-align: center;
     }
 
@@ -45,6 +50,7 @@ body {
 
     .button {
         color: var(--titel-text-color);
+        font-family: inherit;
         font-size: 16px;
         padding-right: 32px;
         padding-left: 32px;
@@ -74,8 +80,8 @@ body {
     }
 
     .button .secondary:hover,.button.secondary:focus{
-        background-color: var(--primari-white-color);
-        color:  var(--accent-color);
+        background-color: var(--accent-color);
+        color:  var(--primari-white-color);
 
     }
 
@@ -83,17 +89,15 @@ body {
 
     .nav .link{
         font-weight: 500;
-        line-height: 16px;
+        line-height: 0.03;
         letter-spacing: 0.02em;
     }
 
     .logo-link{
-        font-family: Raleway;
-        font-style: normal;
-        font-weight: bold;
+        font-family: Raleway, sans-serif;
+        font-weight: 700;
         font-size: 26px;
-        line-height: 31px;
-        letter-spacing: 0.03em;
+        line-height: 1.2;
     }
 
     .logo-link:hover .logo-color, .logo-link:focus .logo-color {
@@ -114,15 +118,11 @@ body {
 
     /*Герой*/
 
-    .hero {
-        background-color: var(--primary-text-color);
-    }
-
     .hero-title {
         color: var(--primari-white-color);
         font-weight: 900;
         font-size: 44px;
-        line-height: 60px;
+        line-height: 1.36;
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase
@@ -144,9 +144,8 @@ body {
 
     .advantages-title{
         font-weight: 700;
-        line-height: 16px;
+        line-height: 1.14;
         font-size: 14px;
-        letter-spacing: 0.03em;
         text-transform: uppercase;
         text-align: left;
     }
@@ -155,36 +154,42 @@ body {
 
     /*Наша команда*/
 
-    .team-title{
+    .section-bgr{
+        background-color: #F5F4FA;
+    }
+
+    .title-team{
         font-weight: 500;
         font-size: 16px;
-        line-height: 19px;
-        text-align: center;
+        text-align: left;
+        line-height: 1.18;
     }
     .description-team{
         font-size: 16px;
-        line-height: 19px;
-        text-align: center;
+        line-height: 1.9;
     }
 
     /*Футер*/
 
     .office{
         font-style: normal;
-        font-weight: normal;
         font-size: 14px;
-        line-height: 24px
+        line-height: 1.71;
+    }
+
+    .contacts{
+        font-style: normal;
     }
 
     /*2 СТРАНИЦА*/
-    
+
     /*Портфолио*/
 
     .portfolio-title{
         color: var(--titel-text-color);
         font-weight: bold;
         font-size: 18px;
-        line-height: 36px;
+        line-height: 2;
         letter-spacing: 0.06em;
         text-decoration: none;
     }
@@ -192,6 +197,13 @@ body {
     .description-portfolio{
         color: var(--primary-text-color);
         font-size: 16px;
-        line-height: 30px;
+        line-height: 1.9;
         text-decoration: none;
+    }
+
+    .image-hover{
+        background-color: var(--accent-color);
+        color: var(--primari-white-color);
+        font-size: 18px;
+        line-height: 1.55;
     }
