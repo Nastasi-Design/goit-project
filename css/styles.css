@@ -6,19 +6,25 @@
     --color-grey: #F5F4FA;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+html{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
 .container{
-    position: relative;
-    width: 1200px;;
-    margin: 24px 200px;
-    padding: 15px;
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin:0 auto;
 }
 
+h1, h2, h3{
+    margin-top: 0;
+    margin-bottom: 0;
+}
 body {
     background-color: #ffffff;
     color: var(--accent-text-color);
@@ -30,6 +36,9 @@ body {
     letter-spacing: 0.03em;
 }
 
+.section-background{
+    background-color: var(--color-grey);
+}
 /*Общие стили*/
 
 
@@ -57,34 +66,39 @@ body {
         font-size: 36px;
         line-height: 1.16;
         text-align: center;
+        margin: 0;
+        padding: 0;
     }
 
     .description {
         color: var(--primary-text-color);
+        margin: 0;
+        padding: 0;
     }
 
     .button {
         color: var(--titel-text-color);
         font-family: inherit;
         font-size: 16px;
-        padding: 10px 32px;
-        display: inline-block;
         border: none;
         border-radius: 4px;
-
+        display: inline-block;
+        min-width: 73px;
+        text-align: center;
     }
 
     .button.primary {
         background-color: var(--accent-color);
         color: var(--primari-white-color);
         text-decoration: none;
+        box-align: center;
+        padding: 10px 32px;
     }
     
     .button.primary:hover, .button.primary:focus{
         background-color: var(--primari-white-color);
         color:  var(--accent-color);
         font-weight: 700;
-        font-size: 16px;
         line-height: 1.9;
     }
 
@@ -92,11 +106,10 @@ body {
         background-color: var(--color-grey);
         color: var(--titel-text-color);
         font-weight: 500;
-        font-size: 16px;
         line-height: 1.6;
         padding: 6px 22px;
-        display: inline-block;
         margin: 4px;
+        box-align: center;
     }
 
     .button.secondary:hover, .button.secondary:focus{
@@ -140,15 +153,24 @@ body {
         color: var(--accent-color);
     }
 
+    .contacts{
+    }
+
     .nav-top{
         display: inline-block;
-        margin: 25px;
+        margin-right: 25px;
     }
 
 
     /*Герой*/
 
+    .hero{
+        text-align: center;
+    }
+
     .hero-title {
+        margin-top: 0;
+        margin-bottom: 30px;
         color: var(--primari-white-color);
         font-weight: 900;
         font-size: 44px;
@@ -158,21 +180,9 @@ body {
         text-transform: uppercase
     }
 
-    .hero-button {        
-        background-color: var(--accent-color);
-        color: var(--primari-white-color);
-        text-decoration: none;
-    }
-
-    .hero-button:hover, .hero-button:focus{
-        background-color: var(--primari-white-color);
-        color:  var(--accent-color);
-
-    }
-
     /*Наши преимщества*/
     .title-hide{
-        display: none;
+
     }
 
     .advantages-title{
@@ -185,38 +195,68 @@ body {
 
     /*Чем мы занимаемся*/
 
-    /*Наша команда*/
-
-    .section-bgr{
-        background-color: #F5F4FA;
+    .occupation-title{
+        font-weight: 700;
+        line-height: 1.14;
+        font-size: 14px;
+        text-transform: uppercase;
+        text-align: center;
+        color: var(--primari-white-color);
+        background-color: var(--color-grey);
     }
+    }
+
+    /*Наша команда*/
 
     .title-team{
         font-weight: 500;
         font-size: 16px;
-        text-align: left;
         line-height: 1.18;
+        margin-top: 0;
+        margin-bottom: 10;
     }
     .description-team{
         font-size: 16px;
         line-height: 1.9;
     }
 
+    .eject-team{
+        display: inline-block;
+        text-align: center;
+    }
+
+    .card-team {
+        width: 270px;
+        height: 428px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+        overflow: hidden;
+        background-color: var(--primari-white-color);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+      }
+
     /*Футер*/
 
     .office{
         font-style: normal;
         font-size: 14px;
-        line-height: 1.71;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
     .contacts{
         font-style: normal;
-    }
 
+    }
+      
     /*2 СТРАНИЦА*/
 
     /*Портфолио*/
+
+    .portfolio{
+
+    }
 
     .portfolio-title{
         color: var(--titel-text-color);
@@ -225,6 +265,13 @@ body {
         line-height: 2;
         letter-spacing: 0.06em;
         text-decoration: none;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .list.botton{
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .description-portfolio{
@@ -239,4 +286,10 @@ body {
         color: var(--primari-white-color);
         font-size: 18px;
         line-height: 1.55;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .eject{
+        display: inline-block;
     }
