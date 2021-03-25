@@ -131,11 +131,6 @@ section {
 
     /*Хедер*/
 
-    .page-head{
-        padding-top: 24px;
-        padding-bottom: 24px;
-    }
-
     .link.activ {
         color: var(--accent-color);
     }
@@ -145,6 +140,7 @@ section {
         font-weight: 700;
         font-size: 26px;
         line-height: 1.2;
+        margin-right: 90px;
     }
 
     .logo-link:hover .logo-color, .logo-link:focus .logo-color {
@@ -155,10 +151,19 @@ section {
     .logo-color {
         color: var(--accent-color);
     }
+
+    .nav .item + .item {
+        margin-left: 50px;
+    }
+
+    .nav{
+        display: flex;
+    }
     
     .nav .link{
-        font-weight: 500;
-        line-height: 0.03;
+        display: block;
+        padding-top: 24px;
+        padding-bottom: 24px;
     }
 
     .contacts .link{
@@ -168,12 +173,22 @@ section {
         color: var(--accent-color);
     }
 
+    .contacts .item + .item {
+        margin-left: 50px;
+    }
     .contacts{
+        display: flex;
     }
 
-    .nav-top{
-        display: inline-block;
-        margin-right: 25px;
+    .contacts .link{
+        display: block;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .site-nav {
+        display: flex;
+        align-items: center;
     }
 
 
@@ -256,6 +271,9 @@ section {
         background-color: var(--background-color);
         padding-top: 60px;
         padding-bottom: 60px;
+        display: flex
+        align-items: center;
+        justify-content: space-between;
     }
 
     .logo-footer{
@@ -283,6 +301,11 @@ section {
 
     /*Портфолио*/
 
+    .card-set{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .portfolio-title{
         color: var(--titel-text-color);
         font-weight: 700;
@@ -295,8 +318,10 @@ section {
     }
 
     .list.botton{
-        margin-left: auto;
-        margin-right: auto;
+        margin-top: 0px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-wrap: wrap-reverse;
     }
 
     .description-portfolio{
@@ -314,3 +339,4 @@ section {
         margin-top: 0;
         margin-bottom: 0;
     }
+    
