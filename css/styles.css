@@ -25,8 +25,8 @@ html{
 
 h1, h2, h3{
     margin-top: 0;
-    margin-bottom: 0;
 }
+
 body {
     background-color: #ffffff;
     color: var(--accent-text-color);
@@ -77,7 +77,7 @@ section {
         padding: 0;
     }
     .title-section{
-        padding-bottom: 50px;
+       margin-bottom: 50px;
     }
 
     .description {
@@ -118,7 +118,6 @@ section {
         font-weight: 500;
         line-height: 1.6;
         padding: 6px 22px;
-        margin: 4px;
         box-align: center;
     }
 
@@ -127,6 +126,13 @@ section {
         color:  var(--primari-white-color);
         outline: transparent;
         box-shadow: 0 0 10px rgba(33, 150, 243, 0.5);      
+    }
+
+    .flex-container{
+        display: flex;
+        flex-wrap: wrap;
+        /*background-color: lightcoral;*/
+        /*justify-content: space-between;*/
     }
 
     /*Хедер*/
@@ -140,7 +146,6 @@ section {
         font-weight: 700;
         font-size: 26px;
         line-height: 1.2;
-        margin-right: 90px;
     }
 
     .logo-link:hover .logo-color, .logo-link:focus .logo-color {
@@ -158,6 +163,7 @@ section {
 
     .nav{
         display: flex;
+        margin-left: 90px;
     }
     
     .nav .link{
@@ -178,6 +184,7 @@ section {
     }
     .contacts{
         display: flex;
+        margin-left: auto;
     }
 
     .contacts .link{
@@ -212,6 +219,10 @@ section {
     }
 
     /*Наши преимщества*/
+
+    .advantages-item{
+        width: 270px;     
+    }
   
     .advantages-title{
         font-weight: 700;
@@ -223,7 +234,23 @@ section {
         margin-bottom: 10px;
     }
 
+    .advantages-list .advantages-item + .advantages-item{
+        margin-left: 30px;
+    }
+
     /*Чем мы занимаемся*/
+
+    .occupation-item{
+        width: 370px;
+        margin-right: 30px;
+    }
+
+    ..occupation-item:nth-child(3n){
+        margin-right: 0;
+    }
+    .occupation-list .occupation-item + .occupation-item{
+        margin-left: 30px;
+    }
 
     .occupation{
         padding-top: 0px;
@@ -238,16 +265,21 @@ section {
         color: var(--primari-white-color);
         background-color: var(--color-grey);
     }
-    }
+
 
     /*Наша команда*/
+
+    .card-team img{
+        margin-bottom: 30px;
+    }
+    
 
     .title-team{
         font-weight: 500;
         font-size: 16px;
         line-height: 1.18;
         margin-top: 0;
-        margin-bottom: 10;
+        margin-bottom: 10px;
     }
     .description-team{
         font-size: 16px;
@@ -257,13 +289,18 @@ section {
     .card-team {
         width: 270px;
         height: 428px;
+        margin-right: 30px;
         margin-bottom: 20px;
         border-radius: 4px;
+        text-align: center;
         overflow: hidden;
         background-color: var(--primari-white-color);
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
       }
+
+      /*.card-team:nth-child(4) {
+        margin-right: 0;*/
 
     /*Футер*/
 
@@ -301,9 +338,28 @@ section {
 
     /*Портфолио*/
 
-    .card-set{
-        display: flex;
-        flex-wrap: wrap;
+    .button .button-item + .button-item{
+        margin-left: 8px;
+    }
+
+    .portfolio .button{
+        justify-content: center;
+    }
+
+    .list.button.flex-container{
+        margin-bottom: 50px;
+    }
+    
+    .set-item{
+        width: 370px;
+        background-color: var(--primari-white-color);
+        border: 1px solid #EEEEEE;
+        margin-right: 44px;
+        margin-bottom: 44px;
+    }
+
+    .set-item:nth-child(3n){
+        margin-right: 0;
     }
 
     .portfolio-title{
@@ -313,15 +369,17 @@ section {
         line-height: 2;
         letter-spacing: 0.06em;
         text-decoration: none;
+        padding-left: 24px;
+        padding-right: 24px;
         margin-top: 0;
         margin-bottom: 4;
     }
 
-    .list.botton{
-        margin-top: 0px;
-        margin-bottom: 50px;
-        display: flex;
-        flex-wrap: wrap-reverse;
+    .set-image{
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 20px;
     }
 
     .description-portfolio{
@@ -329,6 +387,9 @@ section {
         font-size: 16px;
         line-height: 1.9;
         text-decoration: none;
+        margin-bottom: 20px;
+        padding-left: 24px;
+        padding-right: 24px;
     }
 
     .image-hover{
@@ -338,5 +399,7 @@ section {
         line-height: 1.55;
         margin-top: 0;
         margin-bottom: 0;
+        padding-left: 24px;
+        padding-right: 24px;
     }
     
